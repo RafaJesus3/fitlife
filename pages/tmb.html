@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMB</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
@@ -20,14 +21,74 @@
             <li><a href="imc.html">IMC</a></li>
             <li><a href="tmb.html">TMB</a></li>
             <li><a href="water.html">Água</a></li>
+            <li><a href="profile.html">Perfil</a></li>
         </ul>
+
     </nav>
 
     <main>
         <section>
-                <h3>TMB</h3>
 
-                <p>Em breve você poderá calcular sua TMB aqui.</p>
+            <header>
+                <h1>Cálculo de TMB</h1>
+                <img src="../assets/images/tmb.png" alt="Ícone de TMB" width="100">
+            </header>
+
+                <form action="#" method="GET">
+
+                    <div>
+                        <label for="sex">Sexo</label>
+                        <select id="sex" name="sex" required>
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="weight">Peso (kg)</label>
+                        <input 
+                        name="weight"
+                        id="weight"
+                        type="number" 
+                        placeholder="Ex: 70" 
+                        step="0.1"
+                        required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="height">Altura (m)</label>
+                        <input 
+                        name="height"
+                        id="height"
+                        type="number" 
+                        placeholder="Ex: 1.75"
+                        step="0.01"
+                        required
+                        >
+                    </div>
+
+                    <div>
+                    <label for="age">Idade</label>
+                        <input
+                        name="age"
+                        id="age"
+                        type="number"
+                        placeholder="Ex: 25"
+                        required
+                        >
+                    </div>
+
+                        <button type="submit">Calcular</button>
+                </form>
+
+                    <div>
+
+                        <p>Gasto Calórico basal:</p>
+                        <h2>00.0</h2>
+                        <p>Kcal/dia</p>
+
+                    </div>
 
                 <a href="../index.html">Voltar</a>
         </section>
